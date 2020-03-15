@@ -1,0 +1,103 @@
+ /*    ("*" this remove everything in the body section to 0 padding/marging)
+*{
+	margin:0;
+	padding:0;
+}
+*/
+ body{
+ 	background-color: #f4f4f4;
+ 	color: #555;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	font-size: 16px;/*size of letters in the content*/
+ 	line-height: 1.6em;
+ 	margin: 0;
+ }
+ .container{
+ 	width: 80%;
+ 	margin: auto;
+ 	overflow: hidden;
+ }
+ /*our main-header is an id*/
+ #main-header{
+ 	background-color:coral;
+ 	color: #fff;/*#fff is color white----we set letters to white*/
+
+
+ }
+ #navbar{
+ 	background-color: #333;
+ 	color: #fff;
+ }
+ #navbar ul{
+ 	padding: 0;
+ 	list-style: none;/*to remove the dotted style before navs*/
+ }
+
+ /* navs in the li styling*/
+ #navbar li{
+ 	display: inline-block;
+
+ }
+
+ /* home,about us, courses and contant us styling */
+ #navbar a{
+ 	color: #fff;
+ 	text-decoration: none;
+ 	font-size: 18px;
+ 	padding-right: 15px;
+
+ }
+
+ /*****showcase section styling*****/
+ #showcase{
+ 	background-image: url('../images/footer_1.jpg');
+ 	background-position: center right;
+ 	min-height: 400px;/*size of the pic*/
+ 	text-align: center;
+
+ }
+ #showcase h1{
+ 	color: #fff;
+ 	font-size: 30px;
+ 	line-height: 1.6em;/*line spacing*/
+ 	padding-top: 30px;
+ }
+
+ #main{
+ 	float: left;
+ 	width: 70%;
+ 	padding:0 30px;
+ 	box-sizing: border-box;
+ }
+ /****sidebar styling ****/
+ #sidebar{
+ 	float: right;
+ 	width: 30%;
+ 	background: #333;
+ 	color: #fff;
+ 	padding:10px;
+ 	margin-top:10px;/****to separate the upper content from sidebar**/
+ 	box-sizing: border-box;
+ }
+ /*footer styling*/
+ #main-footer{
+ 	background: #333;
+ 	color: #fff;
+ 	text-align: center;
+ 	padding: 20px;
+ 	margin-top: 40px;
+ }
+
+  /* to make everything responsive to device size*/
+ @media(max-width: 600px){
+  /****everything under this website will be responsive to 600px device*/
+  /* that is in the main and sidebar section*/
+ 	#main{
+ 		width: 100%;
+ 		float: none;
+ 	}
+ 	#sidebar{
+ 		width: 100%;
+ 		float: none;
+ 	}
+ }
